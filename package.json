@@ -1,0 +1,23 @@
+{
+  "name": "telega",
+  "private": true,
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "scripts": {
+    "dev": "concurrently -n backend,frontend -c blue,green \"npm run dev -w backend\" \"npm run dev -w frontend\"",
+    "build": "npm run build -w frontend",
+    "start": "npm run start -w backend",
+    "test": "npm run test -w backend",
+    "test:backend": "npm run test -w backend",
+    "test:frontend": "npm run test -w frontend",
+    "test:all": "npm run test:backend && npm run test:frontend",
+    "seed": "npm run seed -w backend && npm run backfill:characteristics -w backend",
+    "db:setup": "npm run db:setup -w backend"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0",
+    "prettier": "^3.9.5"
+  }
+}

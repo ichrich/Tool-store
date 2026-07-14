@@ -1,0 +1,100 @@
+:root {
+  /* Основная палитра */
+  --color-bg: #0c0e10;
+  --color-bg-secondary: #14171a;
+  --color-surface: #20252a;
+  --color-surface-light: #2a3036;
+  --color-surface-card: #171a1d;
+  --color-surface-muted: #22272c;
+
+  --color-accent: #ff5a36;
+  --color-accent-hover: #ff7658;
+  --color-accent-dark: #d94325;
+
+  --color-text: #e8eaf0;
+  --color-text-secondary: #b4babf;
+  --color-text-muted: #7b848c;
+
+  --color-border: #2b3035;
+  --color-border-light: #414950;
+
+  --color-success: #22c55e;
+  --color-success-bg: #052e16;
+  --color-error: #ef4444;
+  --color-error-bg: #2d0f0f;
+  --color-warning: #f59e0b;
+  --color-warning-bg: #2d1f00;
+  --color-info: #3b82f6;
+  --color-info-bg: #0d1f3c;
+
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  /* Шапка */
+  --color-header-bg: rgba(12, 14, 16, 0.9);
+  --color-header-text: #e8eaf0;
+
+  /* Цена */
+  --color-price: #e94560;
+  --color-price-old: #6b7a99;
+
+  /* Метки */
+  --color-badge-new: #22c55e;
+  --color-badge-sale: #e94560;
+
+  /* Скругления */
+  --radius-xs: 2px;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-full: 9999px;
+
+  /* Тени */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.6);
+
+  /* Типографика */
+  --font-sans:
+    "Segoe UI", system-ui, -apple-system, Roboto, "Helvetica Neue", Arial,
+    sans-serif;
+  --font-mono: "Fira Code", "Consolas", monospace;
+
+  /* Отступы */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 2.5rem;
+  --space-8: 3rem;
+
+  /* Геометрия */
+  --max-width: 1380px;
+  --header-height: 72px;
+
+  /* Переходы */
+  --transition: 0.2s ease;
+  --transition-slow: 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+:root[data-theme="light"] {
+  --color-bg: #f3f5f6;
+  --color-bg-secondary: #e9edef;
+  --color-surface: #ffffff;
+  --color-surface-light: #f4f6f7;
+  --color-surface-card: #ffffff;
+  --color-surface-muted: #edf1f2;
+  --color-text: #15191c;
+  --color-text-secondary: #505a62;
+  --color-text-muted: #7b858c;
+  --color-border: #d8dee1;
+  --color-border-light: #bfc8cc;
+  --color-header-bg: rgba(255, 255, 255, 0.9);
+  --color-header-text: #15191c;
+  --shadow-sm: 0 1px 3px rgba(20, 30, 35, 0.08);
+  --shadow-md: 0 8px 28px rgba(20, 30, 35, 0.1);
+  --shadow-lg: 0 18px 48px rgba(20, 30, 35, 0.14);
+}
